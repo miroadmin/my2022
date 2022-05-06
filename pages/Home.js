@@ -1,21 +1,25 @@
 import React, { useState } from "react";
-import myElement, {myElement2, test} from "./Myel.js";
+import myElement, { Test} from "./Myel.js";
 import "../App.css"
 
 
 const Home = () => {
     const obec='Martin';
     return (
-      <div className="home" >
-          <h1 style={{textAlign: "center",color:"red"}}> Prvy {React.version}</h1>
-   {/*}       {test()}  */}
-          {myElement}
-          <Car man='Mirko' girl='Ford' obec={obec}/>
-          <Car1 />
-          <MyForm />
-          <Hodiny />
-          <span>App</span>
-          <List />
+      <div className="celkom">
+            <div className="home" >
+                      <h1 style={{textAlign: "center",color:"red"}}> Prvy {React.version}</h1>
+                      {myElement}
+                      <Test />
+                      <Car man='Mirko' girl='Ford' obec={obec}/>
+                      <Car1 />
+                      <MyForm />
+                      <Hodiny />
+                      <span>App</span>
+            </div>
+            <div className="list">
+                      <List />
+            </div>
         </div>
       
     )
@@ -33,26 +37,6 @@ var zam=[
   {firma:"IBSoloM",meno:"Moro",priezvisko:"Kukis",datum:"2000-07-08",obec:"Martin",psc:"14847",ulica:"1783",kluc:26}];
 
 
-function App(props) {
-  const obec='Martin';
-  const styles ={
-    border: '2px solid rgba(0, 0, 0, 1)', 
-  }
-  return (
-    <div style={styles}>
-        <h1 style={{textAlign: "center",color:"red"}}> Prvy </h1>
- {/*}       {test()}  */}
-        {myElement}
-        <Car man='Mirko' girl='Ford' obec={obec}/>
-        <Car1 />
-        <MyForm />
-        <Hodiny />
-        <span>App</span>
-        <List />
-      </div>
-    
-  )
-}
 
 /*  ***********   Pocitadlo   **************/
 function Hodiny() {
@@ -139,9 +123,9 @@ function Data(props) {
   );
 }
 
-function List() {
+function List() { 
   return (
-    <ul>
+    <ul className="list">
       {zam.map((ni) => <Data meno1={ni.meno} pr={ni.priezvisko} obec={ni.obec}/>)}
     </ul>
   );

@@ -1,38 +1,36 @@
 const styles={
   color:'red',
   fontSize: '9px',
-  width: '10px',
+  width: '300px',
   display:'block',
   whitespace:'nowrap',
 }
 
 const myElement = () => {
+  console.log("<< myElement");
   return (
 <div>
-  <p>Element</p>
-  <input type='text' id='ddd'/>
+  <label> vstupne pole 
+      <input type='text'/>
+  </label>
 </div>
 )
 }
 
-export const test =() => {
+export function Test ()  {
+  console.log("<<test");
   return (
-  <div>
-  <span>I am MIRO</span> <br></br>
-  {test2()}
-</div>
+      <span>I am MIRO {test2()}</span>
 )
 }
 
-const test2 = () => {
+export const test2 = () => {
 return (
-  <div>
-    <p style={styles}> Rozga</p>
-  </div>
+    <span style={styles}> JelenaRozga</span>
 )
 }
 
 
-export const myElement2 = <h1 className="myclass">Class</h1>;
+//export const myElement2 = <h1 className="myclass">Class</h1>;
 
 export default myElement;
