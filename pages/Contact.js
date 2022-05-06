@@ -1,5 +1,12 @@
+import FavoriteColor from "./HookUseState.js";
+
 const Contact = () => {
-  return <h1>Contact Me</h1>;
+  return (
+    <div>
+      <FavoriteColor />
+    </div>
+  )
+
 };
 
 export default Contact;

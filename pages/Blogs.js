@@ -1,7 +1,15 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
-import Todos from "./MemoTodos.js"
+import Todos from "./MemoTodos.js";
+import styles from './miro.module.css'; 
 
+const styleMiro = {
+  display:"block",
+  margin:"0px",
+  backgroundColor:"blue",
+  textAlign: "center",
+  color:"red",
+}
 
 const Blogs = () => {
   const [count, setCount] = useState(0);
@@ -14,13 +22,11 @@ const Blogs = () => {
 
   return (
     <>
-      <h2>Toto vzdy vykresli zoznam aj ked sa nezmeni aaa</h2>
+      <h2 style={styleMiro}>Toto vzdy vykresli zoznam aj ked sa nezmeni</h2>
       {aa.map((e) => {
         return( 
           <div>
-
-          <p> {e} </p>
-       
+          <p className={styles.bigblue}> {e} </p>       
           </div>
         )
       }
