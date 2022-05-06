@@ -29,7 +29,7 @@ const Blogs = () => {
          <hr />
       <Todos todos1={todos} />
       <hr/>
-      <p style={{textAlign:"center"}}> ------ az tu zacina pocitat a Todos sa zase vykresli-------</p>
+      <p style={{textAlign:"center"}}> ------ az tu zacina pocitat a Todos sa zase vykresli-ggg------</p>
       <div style={{marginLeft:"10px"}}>
         Count: {count} 
         <button onClick={increment} style={{marginLeft:"10px"}}> + </button>
