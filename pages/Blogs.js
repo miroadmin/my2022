@@ -14,7 +14,7 @@ const Blogs = () => {
 
   return (
     <>
-      <h2>Toto vzdy vykresli zoznam aj ked sa nezmeni</h2>
+      <h2>Toto vzdy vykresli zoznam aj ked sa nezmeni aaa</h2>
       {aa.map((e) => {
         return( 
           <div>
