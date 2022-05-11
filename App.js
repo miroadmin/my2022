@@ -6,6 +6,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
+import Contact1 from "./pages/Contact1";
 import NoPage from "./pages/NoPage";
 import "./App.css"
 
@@ -65,7 +66,7 @@ import "./App.css"
           <Routes >
               <Route path="home" index element={<Home />} />
               <Route path="blogs" element={<Blogs />} />
-              <Route path="contact" element={<Contact />} />
+              <Route path="contact" element={<Contact1 />} />
               <Route path="*" element={<NoPage />} />
           </Routes>
         </BrowserRouter>
@@ -73,6 +74,6 @@ import "./App.css"
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App/>);
+//const root = ReactDOM.createRoot(document.getElementById('root'));
+//root.render(<App/>);
 export default App;
